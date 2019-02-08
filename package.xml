@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>koda</name>
+  <version>0.0.0</version>
+  <description>The koda package</description>
+  <maintainer email="Estill@todo.todo">Nathan Estill</maintainer>
+  <license>MIT</license>
+  <author >Kawin Nikomborirak</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>apriltags2_ros</exec_depend>
+  <exec_depend>phidgets_imu</exec_depend>
+  <exec_depend>robot_localization</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>usb_cam</exec_depend>
+</package>
