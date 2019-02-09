@@ -9,7 +9,9 @@ odometry through apriltags and inertial odometry from a phidgets IMU.
 
 ### Apriltag Setup
 
-TODO: Coming soon.
+1. Print out 17.5 in * 17.5 in tags with a pixel-width border around them from the 36h11 april tag set ([link](https://github.com/AprilRobotics/apriltag-imgs)]
+2. Place tags on ceiling tiles above the area in which the platform will operate. Placement is limited to blank ceiling tiles that can be fully removed, as successfully attaching the tags requires taping to the backside of the tiles. All tags must be placed in  with the x-axis pointed away from the doorway and the y-axis pointed towards the rear of the room. Many ceiling tiles cannot be fully removed due to piping.
+<img src="https://github.com/olinrobotics/learning-resources/blob/kalman/kalman_filter/images/full_tags.jpg" width=250/>
 
 ### Apriltag Calibration
 
