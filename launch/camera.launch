@@ -2,8 +2,12 @@
   <node pkg="usb_cam" type="usb_cam_node" name="tag_cam">
     <param name="~camera_name" value="tag_cam"/>
     <param name="~camera_frame_id" value="tag_cam"/>
-    <param name="~video_device" value="/dev/video0"/>
-    <param name="~camera_info_url" value="package://koda/camera_info/tag_cam.yaml"/>
+    <param name="~video_device" value="/dev/video1"/>
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="yuyv" />
+    <param name="~camera_info_url" value="package://indoor_localization/camera_info/tag_cam.yaml"/>
+    <param name="io_method" value="mmap"/>
   </node>
 
   <node pkg="image_proc" type="image_proc" name="tag_cam_proc" ns="tag_cam"/>
