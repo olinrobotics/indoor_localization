@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>koda</name>
+  <name>indoor_localization</name>
   <version>0.0.0</version>
-  <description>The koda package</description>
+  <description>Robot pose estimation package for indoor use
+  taking into account apriltag pose estimation and imu data.</description>
   <maintainer email="Estill@todo.todo">Nathan Estill</maintainer>
   <license>MIT</license>
   <author >Kawin Nikomborirak</author>
