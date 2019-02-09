@@ -28,3 +28,9 @@ Upon creating the .yml file in step 7, move the file to `indoor_localization/
 camera_info/<camera_name.yml>`, Then update the `camera_info_url` parameter in
 `camera.launch`. The image_rect node is already launched in `camera.launch`, so
 you don't have to worry about image rectification.
+
+### Authors
+
+This package was built by Connor Novak (20') and Kawin Nikomborirak (21') for
+the Ground Robotic Autonomous Vehicle Laboratory
+([link](https://github.com/olinrobotics/gravl/wiki)).
