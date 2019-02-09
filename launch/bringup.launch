@@ -1,5 +1,5 @@
 <launch>
-  <include file="$(find koda)/launch/camera.launch"/>
-  <include file="$(find coda)/launch/apriltags.launch"/>
+  <include file="$(find indoor_localization)/launch/camera.launch"/>
+  <include file="$(find indoor_localization)/launch/apriltags.launch"/>
   <include file="$(find phidgets_imu)/launch/imu.launch"/>
 </launch>
