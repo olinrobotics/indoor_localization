@@ -16,7 +16,12 @@ odometry through apriltags and inertial odometry from a phidgets IMU.
 
 ### Apriltag Calibration
 
-Follow the instructions for apriltag bundle calibration ([link](http://wiki.ros.org/apriltags2_ros/Tutorials/Bundle%20calibration)). Ensure that you measure the tags that you have printed, as the printer may not recreate them in your specified size. In step 2, when running the Matlab script, if you receive an error saying that Matlab cannot find the file specified, make sure that the names match up between the script and the file. Use the output from the file to update `indoor_localization/config/apriltags.yaml`.
+Follow the instructions for apriltag bundle calibration ([link](http://wiki.ros.org/apriltags2_ros/Tutorials/Bundle%20calibration)). 
+
+* Ensure that you measure the tags that you have printed, as the printer may not recreate them in your specified size. 
+* After running the rosbag command, make sure that you move the resulting .bag file into the correct folder such that the Matlab script can find it.
+* In step 2, when running the Matlab script, if you receive an error saying that Matlab cannot find the file specified, make sure that the names match up between the script and the file.
+* Use the output from the file to update `indoor_localization/config/apriltags.yaml`.
 
 ### Camera Calibration
 
