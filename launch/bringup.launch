@@ -1,5 +1,7 @@
 <launch>
   <include file="$(find indoor_localization)/launch/camera.launch"/>
   <include file="$(find indoor_localization)/launch/apriltags.launch"/>
-  <include file="$(find phidgets_imu)/launch/imu.launch"/>
+  <node pkg="indoor_localization" type="tf_to_odom" name="tf_to_odom"/>
+  <include file="$(find indoor_localization)/launch/imu.launch"/>
+  <include file="$(find indoor_localization)/launch/ekf.launch"/>
 </launch>

@@ -1,0 +1,3 @@
+- git:
+    local-name: apriltags2_ros
+    uri: https://github.com/dmalyuta/apriltags2_ros

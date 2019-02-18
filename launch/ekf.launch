@@ -3,8 +3,8 @@
     <rosparam command="load" file="$(find indoor_localization)/config/ekfparams.yaml" />
 
    <!--  Placeholder for output topic remapping -->
-    <remap from="odometry/filtered" to=""/>
-    <remap from="accel/filtered" to="/data"/>
+    <!-- <remap from="odometry/filtered" to=""/> -->
+    <!-- <remap from="accel/filtered" to="/data"/> -->
 
   </node>
 </launch>
