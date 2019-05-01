@@ -24,17 +24,18 @@ int main(int argc, char **argv) {
 
     geometry_msgs::Twist vel_msg;
     nav_msgs::Odometry odom;
+    odom.header.stamp = ros::Time::now();
     odom.pose.pose.position.x = transformStamped.transform.translation.x;
     odom.pose.pose.position.y = transformStamped.transform.translation.y;
-    odom.pose.pose.position.z = -transformStamped.transform.translation.z;
+    odom.pose.pose.position.z = transformStamped.transform.translation.z;
     odom.pose.pose.orientation.w = transformStamped.transform.rotation.w;
     odom.pose.pose.orientation.x = transformStamped.transform.rotation.x;
     odom.pose.pose.orientation.y = transformStamped.transform.rotation.y;
     odom.pose.pose.orientation.z = transformStamped.transform.rotation.z;
-    odom.header.frame_id = "odom";
-    odom.child_frame_id = "base_link";
+    odom.header.frame_id = "april_tags";
+    odom.child_frame_id = "tag_cam";
 
-        odom_pub.publish(odom);
+    odom_pub.publish(odom);
 
     rate.sleep();
   }

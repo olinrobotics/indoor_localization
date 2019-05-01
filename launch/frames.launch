@@ -1,4 +1,5 @@
 <launch>
-  <node name="imu_to_base" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 0 0 0 /base_link /imu" />
-  <node name="tag_camera_to_base" pkg="tf2_ros" type="static_transform_publisher" args="-0.08 0 0 0 0 0 /base_link /tag_camera" />
+  <node name="bundle_to_odom" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 0 3.1415927 0 april_tags odom" />
+  <node name="base_link_to_imu" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 3.1415927 0 1.5707963 base_link imu" />
+  <node name="base_link_to_tag_cam" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 3.1415927 0 -1.5707963 base_link tag_cam" />
 </launch>
