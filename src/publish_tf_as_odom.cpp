@@ -32,7 +32,7 @@ int main(int argc, char **argv) {
     odom.pose.pose.orientation.x = transformStamped.transform.rotation.x;
     odom.pose.pose.orientation.y = transformStamped.transform.rotation.y;
     odom.pose.pose.orientation.z = transformStamped.transform.rotation.z;
-    odom.header.frame_id = "april_tags";
+    odom.header.frame_id = "map";
     odom.child_frame_id = "tag_cam";
 
     odom_pub.publish(odom);
