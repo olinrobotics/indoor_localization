@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
 
     try {
       transformStamped =
-          tfBuffer.lookupTransform("ac226_bundle", "tag_cam", ros::Time(0));
+          tfBuffer.lookupTransform("board_bundle", "tag_cam", ros::Time(0));
     } catch (tf2::TransformException &ex) {
       ROS_WARN("%s", ex.what());
       ros::Duration(1.0).sleep();
