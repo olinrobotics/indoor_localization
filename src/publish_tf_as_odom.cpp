@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
     odom.header.stamp = ros::Time::now();
     odom.pose.pose.position.x = transformStamped.transform.translation.x;
     odom.pose.pose.position.y = transformStamped.transform.translation.y;
-    odom.pose.pose.position.z = transformStamped.transform.translation.z;
+    odom.pose.pose.position.z = -transformStamped.transform.translation.z;
 
     tf::Quaternion q1(transformStamped.transform.rotation.x,
                       transformStamped.transform.rotation.y,
@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
     m.getRPY(roll, pitch, yaw);
 
     tf2::Quaternion q2;
-    q2.setRPY(roll, pitch, -yaw);
+    q2.setRPY(pitch, roll, -yaw + 3.14159);
     q2.normalize();
 
     odom.pose.pose.orientation.w = q2[3];
